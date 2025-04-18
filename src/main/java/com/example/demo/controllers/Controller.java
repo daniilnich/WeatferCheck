@@ -22,6 +22,8 @@ public class Controller {
         return "index";
     }
 
+
+
     @GetMapping("/weather")
     public String getWeather(@RequestParam String city, Model model){
         System.out.println(city);
@@ -34,6 +36,10 @@ public class Controller {
 
 
 
+// branch test2
+
+
+        //update
         ResponseEntity<List<CityApiResponse>> responseEntity = restTemplate.exchange(
                 urlCity,
                 org.springframework.http.HttpMethod.GET,

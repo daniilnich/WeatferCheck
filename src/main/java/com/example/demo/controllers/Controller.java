@@ -64,6 +64,10 @@ public class Controller {
         model.addAttribute("pressure", pressure);
         model.addAttribute("visibility", visibility);
 
+
+
+
+
         return "weather";
     }
 }

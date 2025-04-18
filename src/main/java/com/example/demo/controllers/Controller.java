@@ -57,7 +57,7 @@ public class Controller {
         double pressure = responseWeather.getBody().main.pressure * 0.75;
         double visibility = responseWeather.getBody().visibility / 1000;
 
-        model.addAttribute("weather", weather);
+        model.addAttribute("weather111111", weather);
         model.addAttribute("temp", temp);
         model.addAttribute("feels_like", feelsLike);
         model.addAttribute("wind", wind);

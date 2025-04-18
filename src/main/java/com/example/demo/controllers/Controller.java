@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,8 +59,16 @@ public class Controller {
         double pressure = responseWeather.getBody().main.pressure * 0.75;
         double visibility = responseWeather.getBody().visibility / 1000;
 
+
+
+
+
+
+
+
+
         model.addAttribute("weather111111", weather);
-        model.addAttribute("temp", temp);
+        model.addAttribute("temp11111", temp);
         model.addAttribute("feels_like", feelsLike);
         model.addAttribute("wind", wind);
         model.addAttribute("pressure", pressure);
